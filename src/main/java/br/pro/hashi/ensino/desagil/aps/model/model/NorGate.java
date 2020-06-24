@@ -2,10 +2,10 @@ package br.pro.hashi.ensino.desagil.aps.model.model;
 
 
 public class NorGate extends Gate {
-    NandGate nandTop;
-    NandGate nandBottom;
-    NandGate nandRight;
-    NandGate nandNot;
+    private final NandGate nandTop;
+    private final NandGate nandBottom;
+    private final NandGate nandRight;
+    private final NandGate nandNot;
 
     public NorGate() {
         super("NOR", 2);
