@@ -19,7 +19,6 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
 
     private final JCheckBox inA;
     private final JCheckBox inB;
-    private final JCheckBox out;
 
     private final Switch s0;
     private final Switch s1;
@@ -35,7 +34,7 @@ public class GateView extends FixedPanel implements ActionListener, MouseListene
 
         inA = new JCheckBox();
         inB = new JCheckBox();
-        out = new JCheckBox();
+        JCheckBox out = new JCheckBox();
 
         s0 = new Switch();
         s1 = new Switch();

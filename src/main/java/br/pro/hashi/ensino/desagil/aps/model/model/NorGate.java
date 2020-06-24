@@ -4,7 +4,6 @@ package br.pro.hashi.ensino.desagil.aps.model.model;
 public class NorGate extends Gate {
     private final NandGate nandTop;
     private final NandGate nandBottom;
-    private final NandGate nandRight;
     private final NandGate nandNot;
 
     public NorGate() {
@@ -14,7 +13,7 @@ public class NorGate extends Gate {
 
         nandBottom = new NandGate();
 
-        nandRight = new NandGate();
+        NandGate nandRight = new NandGate();
 
         nandRight.connect(0, nandTop);
         nandRight.connect(1, nandBottom);
